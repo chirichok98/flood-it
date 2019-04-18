@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import reducer from './reducer';
 
-export default combineReducers({
-	reducer,
+import { State } from './../store';
+import settings from './settings';
+import game from './game';
+
+export default combineReducers<State>({
+	settings,
+	game,
 });
